@@ -139,7 +139,7 @@ a.link_btn:hover {
   transition: all .3s;
 }
 
-.work:not(:nth-child(1)):not(:nth-child(4)) {
+.work:not(:nth-child(3n-2)) {
   margin-left: 100px;
 }
 
