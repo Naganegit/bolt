@@ -3,6 +3,9 @@
 /* 共通 */
 body {
   font-family: 'Lato', sans-serif;
+}
+
+.title_font {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -27,9 +30,9 @@ a.link_btn:hover {
   color: #333;
 }
 
-.fas:not(:last-child) {
+/* .fas:not(:last-child) {
   font-size: 50px;
-}
+} */
 
 /* header */
 .header {
@@ -46,6 +49,10 @@ a.link_btn:hover {
   position: relative;
 }
 
+.header .fas {
+  font-size: 50px;
+}
+
 .header .link_btn {
   position: absolute;
   padding: 14px 12px;
@@ -56,6 +63,7 @@ a.link_btn:hover {
 
 /* main */
 .container {
+  margin-top: 80px;
   width: 100%;
 }
 
@@ -83,18 +91,22 @@ a.link_btn:hover {
   margin-top: 20px;
 }
 
-/* canDo */
-.canDo {
+/* cando */
+.cando {
   background-color: #74cfae;
   color: #fff;
   padding-top: 50px;
 }
 
-.whatCanDo {
+.whatcando {
   position: relative;
 }
 
-.whatCanDo_details {
+.cando_img {
+  vertical-align: bottom;
+}
+
+.whatcando_details {
   position: absolute;
   right: 0;
   text-align: center;
@@ -103,11 +115,11 @@ a.link_btn:hover {
   width: 65%;
 }
 
-.whatCanDo_title {
+.whatcando_title {
   font-size: 20px;
 }
 
-.whatCanDo_content {
+.whatcando_content {
   font-size: 20px;
   margin-top: 35px;
 }
@@ -119,22 +131,18 @@ a.link_btn:hover {
   padding: 60px 0 70px;
 }
 
-.works {
-  box-sizing: border-box;
-  font-size: 0;
-  padding: 40px 0 10px;
-}
-
 .works_title {
   font-size: 20px;
   text-align: center;
 }
 
-.works_box {
-  padding-bottom: 90px;
+.works_img_box {
+  font-size: 0;
+  margin-top: 40px;
 }
 
 .work {
+  display: inline-block;
   opacity: 0.7;
   transition: all .3s;
 }
@@ -151,13 +159,18 @@ a.link_btn:hover {
   opacity: 1;
 }
 
-.works_text {
-  font-size: 24px;
-  width: 70%;
-  display: inline-block;
+.works_txt_box {
+  margin-top: 90px;
 }
 
-.works .link_btn {
+.works_text {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  width: 70%;
+}
+
+.works_txt_box .link_btn {
   padding: 14px 20px;
   margin-left: 90px;
   display: inline-block;
@@ -168,26 +181,29 @@ a.link_btn:hover {
 .skills {
   background-color: #4e4e4e;
   color: #fff;
-  text-align: center;
   padding: 70px 0 100px;
 }
 
 .skills .inner {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .skills_title {
   font-size: 24px;
-  padding-bottom: 50px;
 }
 
-.skill img {
-  padding-bottom: 10px;
+.skills_box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .skill:not(:nth-child(1)) {
   margin-left: 180px;
+}
+
+.skill_caption {
+  margin-top: 10px;
 }
 
 /* sns */
@@ -227,5 +243,14 @@ a.link_btn:hover {
 }
 
 .copyright {
+  color: #fff;
   text-align: right;
+}
+
+@media screen and ( max-width : 1199px ){
+  
+}
+
+@media screen and ( max-width : 767px ){
+  
 }
