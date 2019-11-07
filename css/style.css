@@ -246,7 +246,7 @@ a.link_btn:hover {
 
 
 /* pc */
-@media screen and ( min- width : 1200px ){
+@media screen and ( min-width : 1200px ){
   /* works */
   .work:not(:nth-child(3n-2)) {
     margin-left: 100px;
