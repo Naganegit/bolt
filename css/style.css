@@ -5,6 +5,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  display: none;
+  clear: both;
+}
+
 .wrap {
   overflow: hidden;
 }
@@ -49,20 +55,14 @@ a.link_btn:hover {
   z-index: 99999;
 }
 
-.header .inner {
-  position: relative;
-}
-
 .header .fas {
   font-size: 50px;
 }
 
 .header .link_btn {
-  position: absolute;
+  float: right;
+  margin-top: 5px;
   padding: 14px 12px;
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
 }
 
 .menu {
@@ -286,7 +286,7 @@ a.link_btn:hover {
     margin: 0 auto;
   }
 
-  .work:nth-child(n+4):nth-child(3n+1) {
+  .work:nth-child(3n+4) {
     margin-top: 80px;
   }
 
@@ -323,30 +323,23 @@ a.link_btn:hover {
 
   .menu {
     display: block;
-    position: relative;
-    height: 30px;
-    width: 40px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
     float: right;
   }
   
-  .hang_menu, .hang_menu::before, .hang_menu::after {
-    position: absolute;
+  .hang_line {
     display: block;
     content: "";
     height: 3px;
     width: 40px;
+    margin-top: 8px;
     background-color: #ddd;
   }
 
-  .hang_menu::before {
-    bottom: -13px;
-  }
-
-  .hang_menu::after {
-    bottom: -26px;
+  .hang_line:first-child {
+    margin-top: 0;
   }
 
   /* theme */
