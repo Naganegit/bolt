@@ -5,6 +5,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 .title_font {
   font-family: 'Raleway', sans-serif;
 }
@@ -59,6 +63,10 @@ a.link_btn:hover {
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
+}
+
+.menu {
+  display: none;
 }
 
 /* main */
@@ -143,14 +151,6 @@ a.link_btn:hover {
   display: inline-block;
   opacity: 0.7;
   transition: all .3s;
-}
-
-.work:not(:nth-child(3n-2)) {
-  margin-left: 100px;
-}
-
-.work:nth-child(n+4){
-  margin-top: 80px;
 }
 
 .work:hover {
@@ -244,12 +244,134 @@ a.link_btn:hover {
   text-align: right;
 }
 
-@media screen and ( max-width : 1199px ){
+
+/* pc */
+@media screen and ( min- width : 1200px ){
+  /* works */
+  .work:not(:nth-child(3n-2)) {
+    margin-left: 100px;
+  }
   
+  .work:nth-child(n+4){
+    margin-top: 80px;
+  }
 }
 
+
+/* tb */
+@media screen and ( max-width : 1199px ){
+  .inner {
+    width: 97%;
+  }
+
+  /* what we can do */
+  .cando {
+    padding-bottom: 25px;
+  }
+
+  .whatcando {
+    text-align: center;
+  }
+
+  .whatcando_details {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  /* work */
+  .work {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .work:nth-child(n+4):nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .works_txt_box {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .works_text {
+    width: 100%;
+  }
+
+  .works_txt_box .link_btn {
+    margin: 40px 0 0 0;
+  }
+
+  /* skills */
+  .skills_box {
+    display: block;
+  }
+
+  .skill:not(:first-child) {
+    margin-top: 88px;
+    margin-left: 0;
+  }
+}
+
+
+/* sp */
 @media screen and ( max-width : 767px ){
   .header .link_btn {
     display: none;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    float: right;
+  }
+  
+  .hang_menu, .hang_menu::before, .hang_menu::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: #ddd;
+  }
+
+  .hang_menu::before {
+    bottom: -13px;
+  }
+
+  .hang_menu::after {
+    bottom: -26px;
+  }
+
+  /* theme */
+  .theme {
+    padding: 160px 0 130px;
+  }
+
+  .product_name {
+    font-size: 80px;
+  }
+
+  /* sns */
+  .sns {
+    padding: 50px 0;
+  }
+  
+  .sns_contacts {
+    display: block;
+  }
+
+  .sns_contact {
+    width: 100%;
+  }
+
+  .sns_link:link, .sns_link:visited {
+    padding: 20px 0;
   }
 }
