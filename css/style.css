@@ -101,21 +101,16 @@ a.link_btn:hover {
   padding-top: 50px;
 }
 
-.whatcando {
-  position: relative;
-}
-
 .cando_img {
   vertical-align: bottom;
 }
 
 .whatcando_details {
-  position: absolute;
-  right: 0;
+  display: inline-block;
+  padding: 50px 0 0 50px;
   text-align: center;
-  top: 40%;
-  transform: translate(0, -50%);
   width: 65%;
+  vertical-align: top;
 }
 
 .whatcando_title {
