@@ -107,7 +107,7 @@ a.link_btn:hover {
 
 .whatcando_details {
   display: inline-block;
-  padding: 50px 0 0 50px;
+  margin-left: 50px;
   text-align: center;
   width: 65%;
   vertical-align: top;
