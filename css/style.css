@@ -312,6 +312,11 @@ a.link_btn:hover {
     margin-top: 88px;
     margin-left: 0;
   }
+
+  /* sns */
+  .sns_contact {
+    width: 25%;
+  }
 }
 
 
